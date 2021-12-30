@@ -29,14 +29,12 @@
 </nav>
     <ul class="contact list">
         <li class="contact-nav">
-            <div class="envelope">
             <a href="mailto:info@devstudio.com" class="contact-item mail">
                 <svg class="envelope-mail"  wigth='16' height='12'>
                     <use href='./images/icons.svg#icon-envelope'></use>
                 </svg>
                 info@devstudio.com
             </a>
-            </div>
         </li>
         <li class="contact-nav">
             <a href="tel:+380961111111" class="contact-item mail">
@@ -59,7 +57,7 @@
 <div class="backdrop  is-hidden" data-modal>
     <div class="modal">
          <!-- modal form -->
-        <div>
+         <div>
             <h2 class="modal-name">Оставьте свои данные, мы вам перезвоним</h2>
 <form class="modal-form" autocomplete="on">
     <div class="form-focus">
@@ -70,8 +68,6 @@
             <use href='./images/icons.svg#icon-Vector'></use>
         </svg>
     </label>
-    
-    </div>
    
     <label class="form-field" >
         <span class="name-field">Телефон</span>
@@ -112,7 +108,7 @@
     
 
 </form>
-        </div>
+
         <button class="modal-button " type="button">
         <svg class=" modal-closing"data-modal-close width='11' height='11'>
             <use href='./images/symbol-defs.svg#icon-vector'></use>
@@ -351,6 +347,7 @@
 </section>
 <!-- clients -->
 <section class="client">
+    <div class="container">
     <h2 class="client-name">Постоянные клиенты</h2>
     <ul class="client-list list">
         <li class="clients-item">
@@ -396,6 +393,7 @@
             </a>
         </li>
     </ul>
+</div>
 </section>
 </main>
 <!-- footer -->
@@ -412,6 +410,7 @@
     </div>
     
 <!-- social links FOOTER -->
+    <div class="container">
         <div class="footer-social">
             <h3 class="footer-name">ПРИСОЕДИНЯЙТЕСЬ</h3>
             <ul class="social box list ">
@@ -446,7 +445,9 @@
             </ul>
 
         </div>
+    </div>
         <!-- Подпишитесь на рассылку -->
+        <div class="container">
         <form class="subscribe-form">
             <div class="subscribe">
             <label class="label">
@@ -461,7 +462,7 @@
         </button>
           </div>
         </form>
-
+        </div>
 </footer>
 
 <script src="./js/modal.js"></script>
