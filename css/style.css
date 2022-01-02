@@ -587,6 +587,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 .backdrop.is-hidden{
     opacity: 0;
@@ -628,6 +629,7 @@ body {
     margin-top: 8px;
     margin-right: 8px;
 
+    transition: transform 250ms var(--timefunction);
     
 }
 
@@ -793,7 +795,7 @@ body {
 
 .checkbox-field:checked ~ .checkbox-icon{
     background-color: var(--accent-color);
-    outline-color: var(--accent-color);
+    border: var(--accent-color);
     background-image: url(../images/iconcheck.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -809,7 +811,7 @@ body {
 
     width: 16px;
     height: 15px;
-    outline: 2px solid #212121;
+    border: 2px solid #212121;
     border-radius: 1px;
 
 
@@ -1099,9 +1101,11 @@ body {
 .footer-flex{
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
 }
 .footer-main{
     margin-right: 70px;
+    flex-shrink: 0;
 }
 .box{
     margin: 0;
