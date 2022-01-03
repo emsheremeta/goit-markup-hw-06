@@ -725,8 +725,7 @@ body {
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
-    
-
+    resize: none;
    
 }
 .comment-input:focus,
@@ -764,9 +763,10 @@ body {
 .policy-check{
     font-family: Roboto;
     font-size: 14px;
-    line-height: 0.5;
+    line-height: 24px;
     letter-spacing: 0.03em;
-    
+
+
     color: var(--primary-text-color);
     display: inline-block;
     margin-top: 20px;
